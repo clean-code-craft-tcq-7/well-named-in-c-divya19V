@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <25_pair_code_functions.h>
+#include <25_pair_code_functions.c>
 #include <assert.h>
 
 enum MajorColor {WHITE, RED, BLACK, YELLOW, VIOLET};
