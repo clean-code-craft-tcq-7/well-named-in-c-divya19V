@@ -1,5 +1,5 @@
 #include "main.h"
-#include "25_pair_code_functions.c"
+#include "25_pair_code_functions.h"
 
 int main() {
     testNumberToPair(4, WHITE, BROWN);
