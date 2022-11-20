@@ -1,7 +1,4 @@
-#ifndef DEFINE_MAIN_ONCE
-#define DEFINE_MAIN_ONCE
 #include "main.h"
-#endif
 
 void ColorPairToString(const ColorPair* colorPair, char* buffer) {
     sprintf(buffer, "%s %s",
