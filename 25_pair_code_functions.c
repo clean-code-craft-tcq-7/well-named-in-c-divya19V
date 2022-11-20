@@ -1,3 +1,8 @@
+#ifndef DEFINE_MAIN_ONCE
+#define DEFINE_MAIN_ONCE 1
+#include "main.h"
+#endif
+
 void ColorPairToString(const ColorPair* colorPair, char* buffer) {
     sprintf(buffer, "%s %s",
         MajorColorNames[colorPair->majorColor],
