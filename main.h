@@ -1,3 +1,6 @@
+#ifndef DEFINE_MAIN_ONCE
+#define DEFINE_MAIN_ONCE
+
 #include <stdio.h>
 #include <assert.h>
 
@@ -20,3 +23,4 @@ typedef struct {
     enum MajorColor majorColor;
     enum MinorColor minorColor;
 } ColorPair;
+#endif
