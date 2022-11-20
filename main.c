@@ -1,5 +1,5 @@
-#ifndef DEFINE_MAIN_ONCE
-#define DEFINE_MAIN_ONCE
+#ifndef DEFINE_MAIN_ONCE_
+#define DEFINE_MAIN_ONCE_
 #include "main.h"
 #endif
 #ifndef DEFINE_PAIRCODE_ONCE
