@@ -1,5 +1,10 @@
 #include <stdio.h>
+
+#ifndef DEFINE_PAIRCODE_ONCE
+#define DEFINE_PAIRCODE_ONCE 1
 #include "25_pair_code_functions.c"
+#endif
+
 #include <assert.h>
 
 enum MajorColor {WHITE, RED, BLACK, YELLOW, VIOLET};
