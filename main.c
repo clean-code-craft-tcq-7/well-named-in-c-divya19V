@@ -1,11 +1,5 @@
-#ifndef DEFINE_MAIN_ONCE_
-#define DEFINE_MAIN_ONCE_
 #include "main.h"
-#endif
-#ifndef DEFINE_PAIRCODE_ONCE
-#define DEFINE_PAIRCODE_ONCE 1
 #include "25_pair_code_functions.c"
-#endif
 
 int main() {
     testNumberToPair(4, WHITE, BROWN);
