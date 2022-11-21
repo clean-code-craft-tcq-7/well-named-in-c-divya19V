@@ -41,7 +41,7 @@ void printtable() {
     for (int pairNumber = 0;pairNumber < 25; pairNumber++) {
        printf("%d \t", pairNumber+1);
        if (pairNumber % 5 == 0)
-           printf("%s \t", MajorColorNames[pairNumber % 5]);
+           printf("\t %s \t", MajorColorNames[pairNumber / 5]);
         else 
             printf("\t \t");
         
