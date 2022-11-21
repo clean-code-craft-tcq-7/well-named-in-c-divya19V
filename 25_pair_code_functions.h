@@ -25,5 +25,6 @@ void testPairToNumber(
 
 int GetPairNumberFromColor(const ColorPair* colorPair);
 void ColorPairToString(const ColorPair* colorPair, char* buffer);
+void printtable();
 
 #endif
