@@ -34,17 +34,22 @@ int GetPairNumberFromColor(const ColorPair* colorPair) {
 }
 
 void printtable() {
-     printf("_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n");
+    printf("_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n");
+    printf("No \t \t Major color \t \t Minor color");
+    printf("_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n");
     printf("|");
-    for (int pairNumber = 1;pairNumber <= 25; pairNumber++) {
-       printf("%d \t",pairNumber);
-       if (pairNumber % 5 == 0) 
+    for (int pairNumber = 0;pairNumber < 25; pairNumber++) {
+       printf("%d \t", pairNumber+1);
+       if ((pairNumber % 5 == 0) && (pairNumber!=0))
            printf("%s \t", MajorColorNames[pairNumber % 5]);
+        else 
+            printf("\t \t");
         
-           printf("%s \t", MinorColorNames[pairNumber % 5]);
+           printf("%s \t |", MinorColorNames[pairNumber % 5]);
            printf("\n");
            printf("|");
     }
+     printf("_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n");
 }
 
 
