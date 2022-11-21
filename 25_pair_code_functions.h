@@ -11,4 +11,17 @@ typedef struct {
     enum MajorColor majorColor;
     enum MinorColor minorColor;
 } ColorPair;
+
+ColorPair GetColorFromPairNumber(int pairNumber);
+void testNumberToPair(int pairNumber,
+    enum MajorColor expectedMajor,
+    enum MinorColor expectedMinor);
+
+void testPairToNumber(
+    enum MajorColor major,
+    enum MinorColor minor,
+    int expectedPairNumber);
+
+int GetPairNumberFromColor(const ColorPair* colorPair);
+
 #endif
