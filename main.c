@@ -30,17 +30,7 @@ void testPairToNumber(
 }
 
 int main() {
-    printf("_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n");
-    printf("|");
-    for (int pairNumber = 1;pairNumber <= 25; pairNumber++) {
-       printf("%d \t",pairNumber);
-       if (pairNumber % 5 == 0) 
-           printf("%s \t", MajorColorNames[pairNumber % 5]);
-        
-           printf("%s \t", MinorColorNames[pairNumber % 5]);
-           printf("\n");
-           printf("|");
-    }  
+    printtable();
     testNumberToPair(4, WHITE, BROWN);
     testNumberToPair(5, WHITE, SLATE);
     testPairToNumber(BLACK, ORANGE, 12);
