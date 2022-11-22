@@ -14,8 +14,8 @@ int numberOfMinorColors =
     sizeof(MinorColorNames) / sizeof(MinorColorNames[0]);
 
 //Function converts/stores ColorPair to a buffer
-Input: pointer to Colorcode, pointer to buffer
-Return type: void
+//Input: pointer to Colorcode, pointer to buffer
+//Return type: void
 void ColorPairToString(const ColorPair* colorPair, char* buffer) {
     sprintf(buffer, "%s %s",
         MajorColorNames[colorPair->majorColor],
@@ -23,8 +23,8 @@ void ColorPairToString(const ColorPair* colorPair, char* buffer) {
 }
 
 //Function returns color pair accepting a pair number
-Input: pair number
-Return type: ColorPair
+//Input: pair number
+//Return type: ColorPair
 ColorPair GetColorFromPairNumber(int pairNumber) {
     ColorPair colorPair;
     int zeroBasedPairNumber = pairNumber - 1;
@@ -36,16 +36,16 @@ ColorPair GetColorFromPairNumber(int pairNumber) {
 }
 
 //Function returns pair number accepting ColorPair
-Input: const pointer to ColorPair
-Return type: pair number
+//Input: const pointer to ColorPair
+//Return type: pair number
 int GetPairNumberFromColor(const ColorPair* colorPair) {
     return colorPair->majorColor * numberOfMinorColors +
             colorPair->minorColor + 1;
 }
 
 //Function prints the 25 pair code table
-Input: void
-Return type: void
+//Input: void
+//Return type: void
 void printTable() {
     printf("_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n");
     printf("No \t \t Major color \t \t Minor color\n ");
