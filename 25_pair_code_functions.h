@@ -1,3 +1,4 @@
+//File contains enums, structure declarations and function protoypes to implement 25_pair_code_functions
 #ifndef DEFINE_MAIN_ONCE
 #define DEFINE_MAIN_ONCE
 
@@ -25,6 +26,6 @@ void testPairToNumber(
 
 int GetPairNumberFromColor(const ColorPair* colorPair);
 void ColorPairToString(const ColorPair* colorPair, char* buffer);
-void printtable();
+void printTable();
 
 #endif
