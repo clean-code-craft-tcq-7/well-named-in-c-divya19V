@@ -1,3 +1,4 @@
+//File contains functions to support implementing 25_pair_code_functions 
 #include "25_pair_code_functions.h"
 
 const char* MajorColorNames[] = {
@@ -12,12 +13,18 @@ const char* MinorColorNames[] = {
 int numberOfMinorColors =
     sizeof(MinorColorNames) / sizeof(MinorColorNames[0]);
 
+//Function converts/stores ColorPair to a buffer
+Input: pointer to Colorcode, pointer to buffer
+Return type: void
 void ColorPairToString(const ColorPair* colorPair, char* buffer) {
     sprintf(buffer, "%s %s",
         MajorColorNames[colorPair->majorColor],
         MinorColorNames[colorPair->minorColor]);
 }
 
+//Function returns color pair accepting a pair number
+Input: pair number
+Return type: ColorPair
 ColorPair GetColorFromPairNumber(int pairNumber) {
     ColorPair colorPair;
     int zeroBasedPairNumber = pairNumber - 1;
@@ -28,12 +35,18 @@ ColorPair GetColorFromPairNumber(int pairNumber) {
     return colorPair;
 }
 
+//Function returns pair number accepting ColorPair
+Input: const pointer to ColorPair
+Return type: pair number
 int GetPairNumberFromColor(const ColorPair* colorPair) {
     return colorPair->majorColor * numberOfMinorColors +
             colorPair->minorColor + 1;
 }
 
-void printtable() {
+//Function prints the 25 pair code table
+Input: void
+Return type: void
+void printTable() {
     printf("_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n");
     printf("No \t \t Major color \t \t Minor color\n ");
     printf("_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n");
