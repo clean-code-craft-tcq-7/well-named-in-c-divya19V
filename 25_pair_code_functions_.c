@@ -6,8 +6,8 @@
 const int MAX_COLORPAIR_NAME_CHARS = 16;
 
 //Function tests pair number to a expected major and minor color
-Input: pair number, expected major color and expected minor color
-Return type: void
+//Input: pair number, expected major color and expected minor color
+//Return type: void
 void testNumberToPair(int pairNumber,
     enum MajorColor expectedMajor,
     enum MinorColor expectedMinor)
@@ -21,8 +21,8 @@ void testNumberToPair(int pairNumber,
 }
 
 //Function tests major and minor color to expected pair number
-Input: major color, minor color and expected pair number
-Return type: void
+//Input: major color, minor color and expected pair number
+//Return type: void
 void testPairToNumber(
     enum MajorColor major,
     enum MinorColor minor,
